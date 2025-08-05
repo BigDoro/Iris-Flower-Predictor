@@ -4,7 +4,3 @@ matplotlib
 joblib
 numpy
 pandas
-
-git add requirements.txt
-git commit -m "Fix: remove standard libraries from requirements.txt"
-git push
