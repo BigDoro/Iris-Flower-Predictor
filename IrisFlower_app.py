@@ -1,8 +1,8 @@
 import streamlit as st
+from sklearn.datasets import load_iris
 import pickle
 import numpy as np
 import pandas as pd
-from sklearn.datasets import load_iris
 
 iris= load_iris()
 df= pd.DataFrame(data=iris.data, columns=iris.feature_names)
@@ -37,6 +37,7 @@ if st.button('Predict'):
     st.info(f'Model confidence: Setosa: {probability_predict[0] * 100:.2f}%, '
             f'Versicolor: {probability_predict[1] * 100:.2f}%, '
             f'Virginica: {probability_predict[2] * 100:.2f}%')
+
 
 
 
